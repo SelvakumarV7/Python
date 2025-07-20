@@ -1,0 +1,76 @@
+# School Bus:
+
+import turtle
+
+scr = turtle.Screen()
+scr.title('School Bus')
+scr.bgcolor()
+scr.setup(900,900)
+
+pen = turtle.Turtle()
+pen.pensize(6)
+pen.color('black')
+pen.speed(0)
+pen.fillcolor('Yellow')
+pen.begin_fill()
+pen.penup()
+pen.goto(-300,150)
+pen.pendown()
+
+for i in range(2):
+    pen.fd(600)
+    pen.rt(90)
+    pen.fd(300)
+    pen.rt(90)
+
+pen.end_fill()
+pen.hideturtle()
+
+wheel_1 = turtle.Turtle()
+wheel_1.pensize(5)
+wheel_1.color('purple')
+wheel_1.fillcolor('black')
+wheel_1.begin_fill()
+wheel_1.penup()
+wheel_1.goto(-150,-185)
+wheel_1.pendown()
+wheel_1.circle(35)
+wheel_1.end_fill()
+wheel_1.hideturtle()
+
+wheel_2 = turtle.Turtle()
+wheel_2.pensize(5)
+wheel_2.color('purple')
+wheel_2.fillcolor('black')
+wheel_2.begin_fill()
+wheel_2.penup()
+wheel_2.goto(150,-185)
+wheel_2.pendown()
+wheel_2.circle(35)
+wheel_2.end_fill()
+wheel_2.hideturtle()
+
+window = turtle.Turtle()
+window.pensize(5)
+window.color('Blue')
+window.fillcolor('pink')
+window.begin_fill()
+window.penup()
+window.goto(180,50)
+window.pendown()
+
+for i in range(4):
+    window.fd(80)
+    window.lt(90)
+window.end_fill()
+window.hideturtle()
+
+name = turtle.Turtle()
+name.pensize(10)
+name.color('Black')
+name.penup()
+name.goto(-20,-90)
+name.pendown()
+name.write('SNH International School', align = 'center', font = ('timesnewroman', 30, 'bold') )
+name.hideturtle()
+turtle.done()
